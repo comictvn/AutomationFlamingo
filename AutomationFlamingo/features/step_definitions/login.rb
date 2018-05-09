@@ -5,7 +5,7 @@ When(/^Step 1: Navigate to Homepage$/) do #describe an event, or an action
   driver.navigate.to "http://flamingo-nightly.symcresol.com"
 end
 
-Then (/^I want to die$/) do #expected outcome 
+Then (/^Step 2: Input Email$/) do #expected outcome 
   driver.find_element(:css,'form > div:nth-child(3) > input').send_keys("minhnguyenqc87@gmail.com")
   sleep(1)
   
@@ -14,7 +14,6 @@ end
 Then (/^Step 3: Input Password$/) do #expected outcome 
   element = wait.until { driver.find_element(:css => "form > div:nth-child(4) > input") }
   element.send_keys('password')
-  expected
   sleep(1)
 end
 
