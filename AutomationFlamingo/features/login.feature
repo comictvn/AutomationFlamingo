@@ -12,3 +12,4 @@ Scenario Outline:
   | panda@supplier.flamingo   | password  |
   | panda@fasupplier.flamingo | password  |
   Then I input email and password to fields
+  
