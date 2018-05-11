@@ -1,4 +1,7 @@
 test:
- override:
+dependencies:
+  pre:
+   - gem install bundler
+override:
    - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
-   - bundle exec cucumber
+   - bundle exec cucumber -f pretty -f html -o report.html
