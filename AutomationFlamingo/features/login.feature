@@ -1,6 +1,7 @@
 Feature: Login Screen
 Scenario: 
-  When Step 1: Navigate to Homepage
-  Then Step 2: Input Email
-  Then Step 3: Input Password
-  Then Step 4: Click to Log me In
+  When navigate to Homepage
+  And user input correct email address
+  And user input correct password
+  And user click to Log me In button
+  Then Search Bunkering Plan Screen is shown
